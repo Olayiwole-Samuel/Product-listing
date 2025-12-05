@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Product Listing — Professional</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="site-header" role="banner">
+        <div class="wrap header-inner">
+            <a class="logo" href="#">ShopLab</a>
+            <div class="header-right">
+                <nav aria-label="Main navigation" class="nav">
+                    <a href="#" class="nav-link">Home</a>
+                    <a href="#" class="nav-link">Collections</a>
+                    <a href="#" class="nav-link">Contact</a>
+                </nav>
+                <button id="cart-btn" class="cart-btn" aria-label="Open cart">
+                    🛒 <span id="cart-count" class="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="hero" role="main">
+        <div class="wrap">
+            <h1 class="page-title">Featured Products</h1>
+            <p class="page-sub">Curated selection — fast, clean, and ready to ship.</p>
+
+            <section id="product-grid" class="product-grid" aria-live="polite"></section>
+        </div>
+    </main>
+
+    <!-- Quick view modal -->
+    <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+        <div class="modal-content">
+            <button id="modal-close" class="modal-close" aria-label="Close preview">&times;</button>
+            <img id="modal-image" src="" alt="" class="modal-image" />
+            <div class="modal-info">
+                <h2 id="modal-title"></h2>
+                <p id="modal-price" class="modal-price"></p>
+                <p id="modal-desc" class="modal-desc"></p>
+                <button id="modal-add" class="btn">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
